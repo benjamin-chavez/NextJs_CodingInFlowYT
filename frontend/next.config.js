@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
-}
+  images: {
+    domains: ["www.si.com"],
+    remotePatterns: [
+      // FIXME: BE SURE TO ACTUALLY DEFINE TRUSTED URLS WHEN IN PRODUCTION,
+      { protocol: 'https', hostname: '**' },
+      { protocol: 'http', hostname: '**' },
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
