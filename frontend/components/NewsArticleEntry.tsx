@@ -17,7 +17,7 @@ const NewsArticleEntry = ({
       : undefined;
 
   return (
-    <a href={url}>
+    <a href={url} target="to_blank">
       <Card className="h-100">
         {/* <Card.Img src={validImageUrl} variant="top"></Card.Img> */}
         <Image
