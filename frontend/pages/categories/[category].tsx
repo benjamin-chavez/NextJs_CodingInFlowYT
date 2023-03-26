@@ -45,6 +45,8 @@ export const getStaticProps: GetStaticProps<CategoryNewsPageProps> = async ({
     // Incremental Static Regeneration: implemented using the `revalidate` field below. THis is a good middle ground between getServerSideProps and getStaticProps because the data updates based on the interval, which keeps it up to date and only one user gets a long reload at the start of each new revalidate period.
     revalidate: 5 * 60,
   };
+
+  // let error go to 500 page
 };
 
 const CategoryNewsPage = ({ newsArticles }: CategoryNewsPageProps) => {
