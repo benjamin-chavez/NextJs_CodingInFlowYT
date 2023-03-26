@@ -1,1 +1,1 @@
-# NextJs_CodingInFlowYT
+# NextJS - Simple News App
